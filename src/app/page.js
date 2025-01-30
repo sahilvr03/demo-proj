@@ -7,12 +7,12 @@ export default function Home() {
       {/* Navbar */}
       <nav className="flex items-center px-8 py-4 border-b border-gray-700">
         <div className="flex items-center gap-3">
-          <span className="text-lg font-bold">[ APTOS BUILD ]</span>
+          <span className="text-lg font-bold">[ Kadeshchain ]</span>
           <span className="text-xs bg-gray-700 px-2 py-1 rounded">BETA</span>
         </div>
         <div className="ml-auto flex gap-6 text-sm items-center">
           <a href="#products" className="hover:text-gray-400">Products</a>
-          <a href="#about" className="hover:text-gray-400">About Aptos</a>
+          <a href="#about" className="hover:text-gray-400">About Kadeshchain</a>
           <a href="#use-cases" className="hover:text-gray-400">Use Cases</a>
           <button className="bg-gray-700 px-4 py-2 rounded text-sm">SIGN UP / LOG IN</button>
         </div>
@@ -23,11 +23,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="flex flex-col items-center text-center p-16">
         <h1 className="text-5xl md:text-6xl font-bold uppercase leading-tight">
-          The Essential Toolkit for Every Aptos Developer
+          The Essential Toolkit for Every kadeshchain Developer
         </h1>
         <br />
         <p className="max-w-2xl mt-4 text-gray-300 text-xl">
-          Aptos Build offers a robust, easy-to-use suite of tools for developers to create, test, and launch dApps on Aptos.
+          kadeshchain Build offers a robust, easy-to-use suite of tools for developers to create, test, and launch dApps on Kadeshchain.
           Whether you are a beginner or an experienced builder, you can generate API keys in seconds, launch NFT collections
           with a single click, and streamline user onboarding - all from one easy-to-use platform.
         </p>
@@ -84,7 +84,7 @@ export default function Home() {
       {/* About Aptos Section */}
       <section id="about" className="p-10">
         <h2 className="text-xl font-bold uppercase text-gray-400 flex items-center gap-2">
-          About Aptos <FaArrowRight />
+          About kadeshchain <FaArrowRight />
         </h2>
         {/* <h3>The Blockchain for Builders</h3> */}
         <div className="grid md:grid-cols-2 gap-6 items-center mt-6">
@@ -92,7 +92,7 @@ export default function Home() {
           <h3 className="text-2xl font-semibold">Industry Leading Performance:</h3>
           {/* Right Side - Text */}
           <div className="text-gray-300 text-lg space-y-4">
-            <p>With a peak of 30,000 transactions per second paired with 99.99% uptime, Aptos is the fastest and most reliable network.</p>
+            <p>With a peak of 30,000 transactions per second paired with 99.99% uptime, kadeshchain is the fastest and most reliable network.</p>
           </div>
         </div>
         <div className="border-b border-gray-700 my-6"></div>
@@ -112,7 +112,7 @@ export default function Home() {
           <h3 className="text-2xl font-semibold">Lowest Fees on any Chain</h3>
           {/* Right Side - Text */}
           <div className="text-gray-300 text-lg space-y-4">
-            <p>Gas fees on Aptos are up to 100x lower than other Layer-1 chains—so low, you won’t mind covering them.</p>
+            <p>Gas fees on kadeshchain are up to 100x lower than other Layer-1 chains—so low, you won’t mind covering them.</p>
           </div>
         </div>
         <div className="border-b border-gray-700 my-6"></div>
@@ -210,7 +210,7 @@ export default function Home() {
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
     
     {/* Left Side - Aptos Labs */}
-    <div className="text-lg font-semibold">Aptos Labs</div>
+    <div className="text-lg font-semibold">kadeshchain Labs</div>
 
     {/* Center Links */}
     <div className="flex space-x-6 mt-4 md:mt-0">
