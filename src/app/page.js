@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { ArrowRight, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import ParticlesBackground from './components/ParticlesBackground';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,8 +95,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 pt-20">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-green-500/10 via-blue-500/5 to-transparent pointer-events-none" />
-        <div className="max-w-4xl mx-auto space-y-8">
+        <ParticlesBackground />
+        <div className="relative z-10 max-w-4xl mx-auto space-y-8">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold uppercase leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-400 animate-fade-in">
             The Essential Toolkit for Every Kadeshchain Developer
           </h1>
