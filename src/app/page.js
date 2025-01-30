@@ -119,38 +119,108 @@ export default function Home() {
       </section>
 
        {/* Use Cases Section */}
-<section id="use-cases" className="p-10 text-center">
+       <section id="use-cases" className="p-10 text-center">
   <h2 className="text-xl font-bold uppercase border-b border-gray-700 pb-2 text-gray-400 flex">
     Use Cases <FaArrowRight className="ml-2" />
   </h2>
-  <p className="text-gray-300 text-lg mt-6 max-w-2xl mx-auto">
-    Level Up Your Games<br />
+  <h2 className="text-white-300 text-3xl mt-10 max-w-7xl mx-auto">Level Up Your Games </h2>
+
+  <p className="text-gray-300 text-xlg mt-6 max-w-4xl mx-auto">
     Transform your games into thriving player-driven ecosystems that boost engagement and monetization. Aptos Build provides tools and infrastructure tailored to meet the needs of modern game studios.
   </p>
 
-  {/* Use Case Boxes */}
-  <div className="flex flex-col md:flex-row justify-center items-center gap-8 mt-10">
-    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-40">
-      <h3 className="text-lg font-bold text-white">NFT Studio</h3>
-      <p className="text-gray-300 mt-2">
-        Enable dynamic, evolving NFTs that reflect players' in-game achievements. Your players can control, trade, and upgrade their in-game assets, providing a sense of ownership that drives engagement and retention.
-      </p>
+  {/* First Use Case Boxes */}
+  <div className="flex flex-col items-center gap-8 mt-10">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-80">
+        <h3 className="text-lg font-bold text-white">NFT Studio</h3>
+        <p className="text-gray-300 mt-2">
+          Enable dynamic, evolving NFTs that reflect players' in-game achievements. Your players can control, trade, and upgrade their in-game assets, providing a sense of ownership that drives engagement and retention.
+        </p>
+      </div>
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative">
+        <h3 className="text-lg font-bold text-white">Identity Solutions</h3>
+        <p className="text-gray-300 mt-2">
+          Provide gamers with seamless Web2 social login experiences across mobile and desktop.
+        </p>
+      </div>
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-80">
+        <h3 className="text-lg font-bold text-white">API Access</h3>
+        <p className="text-gray-300 mt-2">
+          Our seamless API integration allows you to build and scale games without the complexities of blockchain management.
+        </p>
+      </div>
     </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center">
-      <h3 className="text-lg font-bold text-white">Identity Solutions</h3>
-      <p className="text-gray-300 mt-2">
-        Provide gamers with seamless Web2 social login experiences across mobile and desktop.
-      </p>
+
+    {/* Centered Image Below First Identity Solutions */}
+    <div className="flex justify-center">
+      <Image 
+        src={`/icons/lvlup.png`} 
+        alt="icon" 
+        width={450} 
+        height={450} 
+        className="mt-4"
+      />
     </div>
-    <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-40">
-      <h3 className="text-lg font-bold text-white">API Access</h3>
-      <p className="text-gray-300 mt-2">
-        Our seamless API integration allows you to build and scale games without the complexities of blockchain management.
-      </p>
+  </div>
+
+  {/* Second Use Case */}
+  <h2 className="text-white-300 text-3xl mt-10 max-w-7xl mx-auto">Boost Loyalty Programs</h2>
+
+  <p className="text-gray-300 text-xlg mt-10 max-w-4xl mx-auto">
+    Imagine a loyalty program where customers are more engaged with your brand than ever before. With Aptos Build, you can seamlessly integrate blockchain technology to create dynamic and secure loyalty solutions that are easy to manage and scale to drive customer retention and satisfaction.
+  </p>
+
+  {/* Second Use Case Boxes */}
+  <div className="flex flex-col items-center gap-8 mt-10">
+    <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-80">
+        <h3 className="text-lg font-bold text-white">NFT Studio</h3>
+        <p className="text-gray-300 mt-2">
+          Transform traditional loyalty rewards with customizable NFTs that adapt to customer behavior. Enhance engagement through deep insights and integrated data analytics, allowing you to tailor rewards to each customer.
+        </p>
+      </div>
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative">
+        <h3 className="text-lg font-bold text-white">Identity Solutions</h3>
+        <p className="text-gray-300 mt-2">
+          Onboard users to your loyalty program seamlessly, with familiar Web2 logins and no abstract concepts.
+        </p>
+      </div>
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-80 h-60 text-center relative top-80">
+        <h3 className="text-lg font-bold text-white">API Access</h3>
+        <p className="text-gray-300 mt-2">
+          Power your loyalty program with the underlying infrastructure to generate and manage API keys, ensuring seamless and scalable integration.
+        </p>
+      </div>
+    </div>
+
+    {/* Centered Image Below Second Identity Solutions */}
+    <div className="flex justify-center">
+      <Image 
+        src={`/icons/boost.png`} 
+        alt="icon" 
+        width={150} 
+        height={60} 
+        className="mt-4"
+      />
     </div>
   </div>
 </section>
+<footer className="bg-gray-900 text-gray-400 py-6 mt-16">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+    
+    {/* Left Side - Aptos Labs */}
+    <div className="text-lg font-semibold">Aptos Labs</div>
 
+    {/* Center Links */}
+    <div className="flex space-x-6 mt-4 md:mt-0">
+      <a href="#" className="hover:text-white">Privacy</a>
+      <a href="#" className="hover:text-white">Terms</a>
+      <a href="#" className="hover:text-white">Content Policy</a>
+    </div>
+
+  </div>
+</footer>
 
 
     </div>
